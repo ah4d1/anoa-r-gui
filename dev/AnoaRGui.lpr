@@ -7,7 +7,8 @@ uses
   cthreads,
   {$ENDIF}{$ENDIF}
   Interfaces, // this includes the LCL widgetset
-  Forms, uf_main, uc_stringgrid, uc_main, uc_pagecontrol
+  Forms, uf_main, uc_stringgrid, uc_main, uc_pagecontrol, uc_outputtext,
+  uc_tabsheet
   { you can add units after this };
 
 {$R *.res}
