@@ -14,17 +14,28 @@ type
 
 implementation
 
+uses
+  uc_tabsheet;
+
 constructor tucPageControl.Create (AOwner : TComponent);
 begin
   inherited Create(AOwner);
   Self.Align := alClient;
-  with Self.AddTabSheet do
+
+  with tucTabSheet.Create(Self) do
   begin
-    Caption := 'Text Output';
+    Parent := Self;
+    Caption := 'Text';
+    fcInit(Caption);
+    // ImageIndex := AImageIndex;
   end;
-  with Self.AddTabSheet do
+
+  with tucTabSheet.Create(Self) do
   begin
-    Caption := 'Graph Output';
+    Parent := Self;
+    Caption := 'Graph';
+    fcInit(Caption);
+    // ImageIndex := AImageIndex;
   end;
 end;
 
