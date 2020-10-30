@@ -9,7 +9,9 @@ uses
 
 type
   tucStringGrid = class(TStringGrid)
+  public
     constructor Create (AOwner : TComponent); override;
+    procedure fcOpenData (AFileName : TFileName);
   end;
 
 implementation
@@ -20,7 +22,13 @@ begin
   Self.Align := alClient;
   Self.ColCount := 2;
   Self.RowCount := 2;
-  Self.FixedCols := 1;
+  Self.FixedCols := 0;
+end;
+
+procedure tucStringGrid.fcOpenData (AFileName : TFileName);
+begin
+  Self.LoadFromCSVFile(AFileName);
+  Self.AutoSizeColumns;
 end;
 
 end.
