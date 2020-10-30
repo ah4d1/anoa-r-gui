@@ -1,0 +1,74 @@
+object FormMain: TFormMain
+  Left = 300
+  Height = 845
+  Top = 119
+  Width = 1147
+  Caption = 'Anoa-R-GUI'
+  ClientHeight = 815
+  ClientWidth = 1147
+  DesignTimePPI = 144
+  Menu = MainMenuMain
+  OnCreate = FormCreate
+  Position = poScreenCenter
+  LCLVersion = '2.0.0.4'
+  object ToolBar1: TToolBar
+    Left = 0
+    Height = 39
+    Top = 0
+    Width = 1147
+    Caption = 'ToolBar1'
+    TabOrder = 0
+    object ToolButton1: TToolButton
+      Left = 1
+      Top = 2
+      Caption = 'ToolButton1'
+    end
+  end
+  object StatusBar1: TStatusBar
+    Left = 0
+    Height = 36
+    Top = 779
+    Width = 1147
+    Panels = <>
+  end
+  object PanelBottom: TPanel
+    Left = 0
+    Height = 299
+    Top = 480
+    Width = 1147
+    Align = alBottom
+    TabOrder = 2
+  end
+  object SplitterBottom: TSplitter
+    Cursor = crVSplit
+    Left = 0
+    Height = 8
+    Top = 472
+    Width = 1147
+    Align = alBottom
+    ResizeAnchor = akBottom
+  end
+  object PanelTop: TPanel
+    Left = 0
+    Height = 433
+    Top = 39
+    Width = 1147
+    Align = alClient
+    TabOrder = 4
+  end
+  object MainMenuMain: TMainMenu
+    left = 472
+    top = 152
+    object MenuItemFile: TMenuItem
+      Caption = '&File'
+      object MenuItemFileOpenData: TMenuItem
+        Caption = '&Data'
+        OnClick = MenuItemFileOpenDataClick
+      end
+    end
+  end
+  object OpenDialogMain: TOpenDialog
+    left = 472
+    top = 256
+  end
+end
