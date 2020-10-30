@@ -62,13 +62,29 @@ object FormMain: TFormMain
     object MenuItemFile: TMenuItem
       Caption = '&File'
       object MenuItemFileOpenData: TMenuItem
-        Caption = '&Data'
-        OnClick = MenuItemFileOpenDataClick
+        Action = ActionDataOpen
       end
     end
   end
   object OpenDialogMain: TOpenDialog
     left = 472
     top = 256
+  end
+  object PopupMenuData: TPopupMenu
+    left = 624
+    top = 152
+    object MenuItemPopupOpenData: TMenuItem
+      Action = ActionDataOpen
+    end
+  end
+  object ActionListMain: TActionList
+    left = 782
+    top = 151
+    object ActionDataOpen: TAction
+      Category = 'Data'
+      Caption = 'Open Data ...'
+      OnExecute = ActionDataOpenExecute
+      ShortCut = 16463
+    end
   end
 end
