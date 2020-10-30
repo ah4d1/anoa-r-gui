@@ -16,6 +16,7 @@ type
     property vStringGrid : tucStringGrid read FStringGrid write FStringGrid;
     property vPageControl : tucPageControl read FPageControl write FPageControl;
     constructor Create (AOwner : TWinControl; APanelLeft,APanelBottom : TPanel);
+    procedure fcOpenData (AFileName : TFileName);
   end;
 
 var
@@ -26,10 +27,15 @@ implementation
 constructor tucMain.Create (AOwner : TWinControl; APanelLeft,APanelBottom : TPanel);
 begin
   inherited Create(AOwner);
-  vStringGrid := tucStringGrid.Create(AOwner);
-  vStringGrid.Parent := APanelLeft;
-  vPageControl := tucPageControl.Create(AOwner);
-  vPageControl.Parent := APanelBottom;
+  Self.vStringGrid := tucStringGrid.Create(AOwner);
+  Self.vStringGrid.Parent := APanelLeft;
+  Self.vPageControl := tucPageControl.Create(AOwner);
+  Self.vPageControl.Parent := APanelBottom;
+end;
+
+procedure tucMain.fcOpenData (AFileName : TFileName);
+begin
+  Self.vStringGrid.fcOpenData(AFileName);
 end;
 
 end.
