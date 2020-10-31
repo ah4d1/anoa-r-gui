@@ -76,6 +76,15 @@ object FormMain: TFormMain
     object MenuItemPopupOpenData: TMenuItem
       Action = ActionDataOpen
     end
+    object MenuItemPopupDf: TMenuItem
+      Caption = 'Dataframe'
+      object MenuItemPopupDfDesc: TMenuItem
+        Caption = 'Descriptive'
+        object MenuItemPopupDfDescStr: TMenuItem
+          Caption = 'Structure'
+        end
+      end
+    end
   end
   object ActionListMain: TActionList
     left = 782
@@ -85,6 +94,11 @@ object FormMain: TFormMain
       Caption = 'Open Data ...'
       OnExecute = ActionDataOpenExecute
       ShortCut = 16463
+    end
+    object ActionDfStructure: TAction
+      Category = 'Dataframe'
+      Caption = 'Structure'
+      OnExecute = ActionDfStructureExecute
     end
   end
 end
