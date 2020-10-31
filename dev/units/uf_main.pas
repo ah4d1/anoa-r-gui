@@ -13,9 +13,13 @@ type
   { TFormMain }
 
   TFormMain = class(TForm)
+    ActionDfStructure: TAction;
     ActionDataOpen: TAction;
     ActionListMain: TActionList;
     MainMenuMain: TMainMenu;
+    MenuItemPopupDfDescStr: TMenuItem;
+    MenuItemPopupDfDesc: TMenuItem;
+    MenuItemPopupDf: TMenuItem;
     MenuItemPopupOpenData: TMenuItem;
     MenuItemFileOpenData: TMenuItem;
     MenuItemFile: TMenuItem;
@@ -28,6 +32,7 @@ type
     ToolBar1: TToolBar;
     ToolButton1: TToolButton;
     procedure ActionDataOpenExecute(Sender: TObject);
+    procedure ActionDfStructureExecute(Sender: TObject);
     procedure FormCreate(Sender: TObject);
   private
 
@@ -45,11 +50,12 @@ implementation
 { TFormMain }
 
 uses
-  uc_main;
+  uc_main, up_var;
 
 procedure TFormMain.FormCreate(Sender: TObject);
 begin
-  vucMain := tucMain.Create(Self,Self.PanelTop,Self.PanelBottom);
+  vupVar := tupVar.Create;
+  vucMain := tucMain.Create(Self,Self.PanelTop,Self.PanelBottom,Self.PopupMenuData);
 end;
 
 procedure TFormMain.ActionDataOpenExecute(Sender: TObject);
@@ -58,6 +64,11 @@ begin
   begin
     vucMain.fcOpenData(Self.OpenDialogMain.FileName);
   end;
+end;
+
+procedure TFormMain.ActionDfStructureExecute(Sender: TObject);
+begin
+  // vucMain.
 end;
 
 end.
