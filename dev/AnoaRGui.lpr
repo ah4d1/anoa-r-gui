@@ -8,7 +8,7 @@ uses
   {$ENDIF}{$ENDIF}
   Interfaces, // this includes the LCL widgetset
   Forms, uf_main, uc_stringgrid, uc_main, uc_pagecontrol, uc_outputtext,
-  uc_tabsheet
+  uc_tabsheet, up_var
   { you can add units after this };
 
 {$R *.res}
