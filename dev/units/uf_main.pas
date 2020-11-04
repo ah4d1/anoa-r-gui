@@ -6,7 +6,7 @@ interface
 
 uses
   Classes, SysUtils, Forms, Controls, Graphics, Dialogs, Menus, ComCtrls,
-  ExtCtrls, Grids, StdCtrls, ActnList;
+  ExtCtrls, Grids, StdCtrls, ActnList, aca_rcommand;
 
 type
 
@@ -54,6 +54,7 @@ uses
 
 procedure TFormMain.FormCreate(Sender: TObject);
 begin
+  vacaRCommand := TAcaRCommand.Create(Self);
   vupVar := tupVar.Create;
   vucMain := tucMain.Create(Self,Self.PanelTop,Self.PanelBottom,Self.PopupMenuData);
 end;
@@ -68,7 +69,7 @@ end;
 
 procedure TFormMain.ActionDfStructureExecute(Sender: TObject);
 begin
-  // vucMain.
+  vucMain.fcRun(acaCmdStructure);
 end;
 
 end.
