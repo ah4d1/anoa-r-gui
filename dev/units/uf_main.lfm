@@ -81,7 +81,7 @@ object FormMain: TFormMain
       object MenuItemPopupDfDesc: TMenuItem
         Caption = 'Descriptive'
         object MenuItemPopupDfDescStr: TMenuItem
-          Caption = 'Structure'
+          Action = ActionDfStructure
         end
       end
     end
