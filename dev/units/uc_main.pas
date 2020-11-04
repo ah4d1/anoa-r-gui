@@ -6,7 +6,7 @@ interface
 
 uses
   Classes, SysUtils, Controls, ExtCtrls, uc_stringgrid, uc_pagecontrol, uc_rcommand,
-  Dialogs, Menus;
+  Dialogs, Menus, aca_rcommand;
 
 type
   tucMain = class(TComponent)
@@ -21,7 +21,7 @@ type
     constructor Create (AOwner : TWinControl; APanelLeft,APanelBottom : TPanel;
       APopupMenu : TPopupMenu);
     procedure fcOpenData (AFileName : TFileName);
-    procedure fcRun (ACommand : targCommand);
+    procedure fcRun (ACommand : TAcaCommandType);
   end;
 
 var
@@ -46,7 +46,7 @@ begin
   Self.vStringGrid.fcOpenData(AFileName);
 end;
 
-procedure tucMain.fcRun (ACommand : targCommand);
+procedure tucMain.fcRun (ACommand : TAcaCommandType);
 begin
   vucRCommand.fcRun(ACommand);
 end;
