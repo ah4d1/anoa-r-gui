@@ -4,7 +4,7 @@
     <PathDelim Value="\"/>
     <Version Value="11"/>
     <BuildModes Active="Default"/>
-    <Units Count="16">
+    <Units Count="17">
       <Unit0>
         <Filename Value="AnoaRGui.lpr"/>
         <IsPartOfProject Value="True"/>
@@ -18,8 +18,8 @@
         <ComponentName Value="FormMain"/>
         <HasResources Value="True"/>
         <ResourceBaseClass Value="Form"/>
-        <TopLine Value="51"/>
-        <CursorPos X="83" Y="58"/>
+        <TopLine Value="54"/>
+        <CursorPos Y="72"/>
         <UsageCount Value="23"/>
         <Loaded Value="True"/>
         <LoadedDesigner Value="True"/>
@@ -37,8 +37,8 @@
         <Filename Value="units\uc_main.pas"/>
         <IsPartOfProject Value="True"/>
         <EditorIndex Value="1"/>
-        <TopLine Value="26"/>
-        <CursorPos X="73" Y="34"/>
+        <TopLine Value="33"/>
+        <CursorPos Y="51"/>
         <UsageCount Value="23"/>
         <Loaded Value="True"/>
       </Unit3>
@@ -82,16 +82,15 @@
         <Filename Value="units\uc_rcommand.pas"/>
         <IsPartOfProject Value="True"/>
         <EditorIndex Value="7"/>
-        <TopLine Value="17"/>
-        <CursorPos X="72" Y="34"/>
+        <TopLine Value="18"/>
+        <CursorPos X="40" Y="32"/>
         <UsageCount Value="21"/>
         <Loaded Value="True"/>
       </Unit8>
       <Unit9>
         <Filename Value="units\up_var.pas"/>
         <IsPartOfProject Value="True"/>
-        <IsVisibleTab Value="True"/>
-        <EditorIndex Value="8"/>
+        <EditorIndex Value="9"/>
         <TopLine Value="5"/>
         <CursorPos X="68" Y="9"/>
         <UsageCount Value="20"/>
@@ -140,123 +139,136 @@
         <CursorPos X="32" Y="14"/>
         <UsageCount Value="10"/>
       </Unit15>
+      <Unit16>
+        <Filename Value="..\..\anoa-core-analytics\aca_rcommand.pas"/>
+        <IsVisibleTab Value="True"/>
+        <EditorIndex Value="8"/>
+        <TopLine Value="42"/>
+        <CursorPos Y="34"/>
+        <UsageCount Value="10"/>
+        <Loaded Value="True"/>
+      </Unit16>
     </Units>
-    <JumpHistory Count="29" HistoryIndex="28">
+    <JumpHistory Count="30" HistoryIndex="29">
       <Position1>
-        <Filename Value="units\uc_tabsheet.pas"/>
-        <Caret Line="17" Column="80" TopLine="4"/>
+        <Filename Value="units\uf_main.pas"/>
+        <Caret Line="52" Column="24" TopLine="40"/>
       </Position1>
       <Position2>
-        <Filename Value="units\uc_tabsheet.pas"/>
-        <Caret Line="8" Column="61" TopLine="3"/>
+        <Filename Value="units\uf_main.pas"/>
+        <Caret Line="54" Column="24" TopLine="42"/>
       </Position2>
       <Position3>
         <Filename Value="units\uf_main.pas"/>
-        <Caret Line="50" Column="24" TopLine="38"/>
+        <Caret Line="50" TopLine="42"/>
       </Position3>
       <Position4>
         <Filename Value="units\uf_main.pas"/>
-        <Caret Line="51" Column="24" TopLine="39"/>
       </Position4>
       <Position5>
         <Filename Value="units\uf_main.pas"/>
-        <Caret Line="52" Column="24" TopLine="40"/>
+        <Caret Line="31" TopLine="21"/>
       </Position5>
       <Position6>
         <Filename Value="units\uf_main.pas"/>
-        <Caret Line="54" Column="24" TopLine="42"/>
+        <Caret Line="32" TopLine="22"/>
       </Position6>
       <Position7>
         <Filename Value="units\uf_main.pas"/>
-        <Caret Line="50" TopLine="42"/>
+        <Caret Line="46" Column="43" TopLine="42"/>
       </Position7>
       <Position8>
         <Filename Value="units\uf_main.pas"/>
+        <Caret Line="47" Column="43" TopLine="43"/>
       </Position8>
       <Position9>
         <Filename Value="units\uf_main.pas"/>
-        <Caret Line="31" TopLine="21"/>
+        <Caret Line="48" Column="43" TopLine="44"/>
       </Position9>
       <Position10>
         <Filename Value="units\uf_main.pas"/>
-        <Caret Line="32" TopLine="22"/>
+        <Caret Line="54" Column="102" TopLine="45"/>
       </Position10>
       <Position11>
         <Filename Value="units\uf_main.pas"/>
-        <Caret Line="46" Column="43" TopLine="42"/>
+        <Caret Line="56" Column="102" TopLine="47"/>
       </Position11>
       <Position12>
-        <Filename Value="units\uf_main.pas"/>
-        <Caret Line="47" Column="43" TopLine="43"/>
-      </Position12>
-      <Position13>
-        <Filename Value="units\uf_main.pas"/>
-        <Caret Line="48" Column="43" TopLine="44"/>
-      </Position13>
-      <Position14>
-        <Filename Value="units\uf_main.pas"/>
-        <Caret Line="54" Column="102" TopLine="45"/>
-      </Position14>
-      <Position15>
-        <Filename Value="units\uf_main.pas"/>
-        <Caret Line="56" Column="102" TopLine="47"/>
-      </Position15>
-      <Position16>
         <Filename Value="units\uc_main.pas"/>
         <Caret Line="24" TopLine="11"/>
-      </Position16>
-      <Position17>
+      </Position12>
+      <Position13>
         <Filename Value="units\uc_main.pas"/>
         <Caret Line="23" Column="15" TopLine="15"/>
-      </Position17>
-      <Position18>
+      </Position13>
+      <Position14>
         <Filename Value="units\uc_rcommand.pas"/>
         <Caret Line="22" Column="31" TopLine="11"/>
-      </Position18>
-      <Position19>
+      </Position14>
+      <Position15>
         <Filename Value="units\uc_rcommand.pas"/>
         <Caret Line="32" Column="7" TopLine="11"/>
-      </Position19>
-      <Position20>
+      </Position15>
+      <Position16>
         <Filename Value="units\uc_rcommand.pas"/>
         <Caret Line="24" Column="5" TopLine="13"/>
-      </Position20>
-      <Position21>
+      </Position16>
+      <Position17>
         <Filename Value="units\uc_rcommand.pas"/>
         <Caret Line="34" Column="72" TopLine="17"/>
-      </Position21>
-      <Position22>
+      </Position17>
+      <Position18>
         <Filename Value="units\uf_main.pas"/>
         <Caret Line="53" Column="18" TopLine="46"/>
+      </Position18>
+      <Position19>
+        <Filename Value="units\uc_main.pas"/>
+        <Caret Line="33" TopLine="30"/>
+      </Position19>
+      <Position20>
+        <Filename Value="units\uc_main.pas"/>
+        <Caret Line="36" Column="24" TopLine="24"/>
+      </Position20>
+      <Position21>
+        <Filename Value="units\uc_stringgrid.pas"/>
+        <Caret Line="14" Column="15" TopLine="10"/>
+      </Position21>
+      <Position22>
+        <Filename Value="units\uc_stringgrid.pas"/>
+        <Caret Line="8" Column="52" TopLine="3"/>
       </Position22>
       <Position23>
         <Filename Value="units\uc_main.pas"/>
-        <Caret Line="33" TopLine="30"/>
+        <Caret Line="22" Column="20" TopLine="11"/>
       </Position23>
       <Position24>
-        <Filename Value="units\uc_main.pas"/>
-        <Caret Line="36" Column="24" TopLine="24"/>
-      </Position24>
-      <Position25>
-        <Filename Value="units\uc_stringgrid.pas"/>
-        <Caret Line="14" Column="15" TopLine="10"/>
-      </Position25>
-      <Position26>
-        <Filename Value="units\uc_stringgrid.pas"/>
-        <Caret Line="8" Column="52" TopLine="3"/>
-      </Position26>
-      <Position27>
-        <Filename Value="units\uc_main.pas"/>
-        <Caret Line="22" Column="20" TopLine="11"/>
-      </Position27>
-      <Position28>
         <Filename Value="units\uc_stringgrid.pas"/>
         <Caret Line="8" Column="48" TopLine="3"/>
-      </Position28>
-      <Position29>
+      </Position24>
+      <Position25>
         <Filename Value="units\up_var.pas"/>
         <Caret Line="9" Column="68" TopLine="5"/>
+      </Position25>
+      <Position26>
+        <Filename Value="units\uc_rcommand.pas"/>
+        <Caret Line="28" Column="59" TopLine="17"/>
+      </Position26>
+      <Position27>
+        <Filename Value="units\uc_rcommand.pas"/>
+        <Caret Line="8" Column="34"/>
+      </Position27>
+      <Position28>
+        <Filename Value="..\..\anoa-core-analytics\aca_rcommand.pas"/>
+        <Caret Line="17" Column="69" TopLine="9"/>
+      </Position28>
+      <Position29>
+        <Filename Value="units\uf_main.pas"/>
+        <Caret Line="58" Column="83" TopLine="51"/>
       </Position29>
+      <Position30>
+        <Filename Value="units\uc_rcommand.pas"/>
+        <Caret Line="8" Column="43" TopLine="7"/>
+      </Position30>
     </JumpHistory>
     <RunParams>
       <FormatVersion Value="2"/>
