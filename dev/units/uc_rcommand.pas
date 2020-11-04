@@ -5,14 +5,13 @@ unit uc_rcommand;
 interface
 
 uses
-  Classes, SysUtils;
+  Classes, SysUtils, aca_rcommand, Dialogs;
 
 type
-  targCommand = (argCommandStructure);
   tucRCommand = class
     vMainScript : WideString;
     constructor Create;
-    procedure fcRun (ACommand : targCommand);
+    procedure fcRun (ACommand : TAcaCommandType);
   end;
 
 var
@@ -28,11 +27,14 @@ begin
 
 end;
 
-procedure tucRCommand.fcRun (ACommand : targCommand);
+procedure tucRCommand.fcRun (ACommand : TAcaCommandType);
 begin
+  ShowMessage(vacaRCommand.vMainCommand);
+  {
   case ACommand of
-    argCommandStructure : vMainScript := 'str(' + vupVar.vDataframe + ')';
+    acaCmdStructure : vMainScript := 'str(' + vupVar.vDataframe + ')';
   end;
+  }
 end;
 
 end.
