@@ -54,8 +54,7 @@ uses
 
 procedure TFormMain.FormCreate(Sender: TObject);
 begin
-  vacaRCommand := TAcaRCommand.Create(Self);
-  vupVar := tupVar.Create;
+  vupVar := tupVar.Create(Self);
   vucMain := tucMain.Create(Self,Self.PanelTop,Self.PanelBottom,Self.PopupMenuData);
 end;
 
