@@ -6,7 +6,7 @@ interface
 
 uses
   Classes, SysUtils, Controls, ExtCtrls, uc_stringgrid, uc_pagecontrol, uc_rcommand,
-  Dialogs, Menus, aca_rcommand;
+  Dialogs, Menus, aca_rcommand, up_var;
 
 type
   tucMain = class(TComponent)
