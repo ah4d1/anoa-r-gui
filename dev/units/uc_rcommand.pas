@@ -5,7 +5,7 @@ unit uc_rcommand;
 interface
 
 uses
-  Classes, SysUtils, aca_rcommand, Dialogs;
+  Classes, SysUtils, aca_rcommand, Dialogs, up_var;
 
 type
   tucRCommand = class
@@ -19,9 +19,6 @@ var
 
 implementation
 
-uses
-  up_var;
-
 constructor tucRCommand.Create;
 begin
 
@@ -29,12 +26,8 @@ end;
 
 procedure tucRCommand.fcRun (ACommand : TAcaCommandType);
 begin
-  ShowMessage(vacaRCommand.vMainCommand);
-  {
-  case ACommand of
-    acaCmdStructure : vMainScript := 'str(' + vupVar.vDataframe + ')';
-  end;
-  }
+  vupVar.vAcaRCommand.vCommandType := ACommand;
+  ShowMessage(vupVar.vAcaRCommand.vMainCommand);
 end;
 
 end.
