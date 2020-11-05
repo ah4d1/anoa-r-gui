@@ -5,12 +5,14 @@ unit up_var;
 interface
 
 uses
-  Classes, SysUtils;
+  Classes, SysUtils, aca_rcommand;
 
 type
-  tupVar = class
+  tupVar = class (TComponent)
+  public
+    vAcaRCommand : TAcaRCommand;
     vDataframe : string;
-    constructor Create;
+    constructor Create (AOwner : TComponent);
   end;
 
 var
@@ -18,9 +20,11 @@ var
 
 implementation
 
-constructor tupVar.Create;
+constructor tupVar.Create (AOwner : TComponent);
 begin
+  inherited Create(AOwner);
   Self.vDataframe := 'df';
+  vAcaRCommand := TAcaRCommand.Create(Self);
 end;
 
 end.
